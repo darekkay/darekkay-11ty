@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "12"
+  - "14"
+
+cache:
+  yarn: true
+
+script:
+  - yarn install --pure-lockfile --prefer-offline
+  - yarn ci
+
+branches:
+  only:
+    - master

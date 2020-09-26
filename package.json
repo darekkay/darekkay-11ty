@@ -1,0 +1,52 @@
+{
+  "name": "@darekkay/11ty",
+  "description": "My shared eleventy configuration",
+  "version": "1.0.0",
+  "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
+  "bugs": {
+    "url": "https://github.com/darekkay/darekkay-11ty/issues"
+  },
+  "dependencies": {
+    "@darekkay/logger": "1.0.2"
+  },
+  "devDependencies": {
+    "@darekkay/eslint-config": "2.1.2",
+    "eslint": "7.9.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-unicorn": "22.0.0",
+    "highlight.js": "10.2.0",
+    "markdown-it": "11.0.1",
+    "markdown-it-anchor": "5.3.0",
+    "markdown-it-link-attributes": "3.0.0",
+    "prettier": "2.1.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/darekkay/darekkay-11ty#readme",
+  "keywords": [
+    "eleventy"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "highlight.js": "^10.2.0",
+    "markdown-it": "^11.0.1",
+    "markdown-it-anchor": "^5.3.0",
+    "markdown-it-link-attributes": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darekkay/darekkay-11ty.git"
+  },
+  "scripts": {
+    "ci": "npm run lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
+}

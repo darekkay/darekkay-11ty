@@ -42,10 +42,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darekkay/darekkay-11ty.git"
+    "url": "https://github.com/darekkay/darekkay-11ty.git"
   },
   "scripts": {
     "ci": "npm run lint",
+    "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   }

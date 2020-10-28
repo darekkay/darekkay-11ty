@@ -6,6 +6,9 @@
   {% if description %}
     <meta name="description" content="{{ description }}"/>
   {% endif %}
+  {% if favicon %}
+    <link rel="shortcut icon" href="{{ favicon }}">
+  {% endif %}
   <link rel="stylesheet" href="assets/styles.css">
   <title>{{ title }}</title>
 </head>

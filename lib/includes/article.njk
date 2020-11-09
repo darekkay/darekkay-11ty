@@ -18,6 +18,9 @@
   </header>
   <main>
     {{ content | safe }}
+    {% if plugins.lastUpdated %}
+      <p class="text-center"><small>Last updated: {{ page.date | isoDate }}</small></p>
+    {% endif %}
   </main>
   <footer class="inverted">
     <span>Handmade with ♥ by <a href="https://darekkay.com" target="_blank" rel="noopener">Darek Kay</a></span>

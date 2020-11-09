@@ -19,7 +19,7 @@
   <main>
     {{ content | safe }}
     {% if plugins.lastUpdated %}
-      <p class="text-center"><small>Last updated: {{ page.date | isoDate }}</small></p>
+      <p class="text-center"><small>Last updated: {% currentDate %}</small></p>
     {% endif %}
   </main>
   <footer class="inverted">

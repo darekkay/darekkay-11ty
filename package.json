@@ -7,7 +7,8 @@
     "url": "https://github.com/darekkay/darekkay-11ty/issues"
   },
   "dependencies": {
-    "@darekkay/logger": "1.0.2"
+    "@darekkay/logger": "1.0.2",
+    "dayjs": "1.9.5"
   },
   "devDependencies": {
     "@darekkay/eslint-config": "2.1.2",
@@ -33,7 +34,7 @@
     "eleventy"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "peerDependencies": {
     "@11ty/eleventy": ">=0.11.0",
     "highlight.js": ">=10.2.0",

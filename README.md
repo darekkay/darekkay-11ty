@@ -12,6 +12,10 @@ My shared eleventy configuration.
 yarn add -D @11ty/eleventy @darekkay/11ty @darekkay/styles highlight.js markdown-it markdown-it-anchor markdown-it-link-attributes markdown-it-replace-link rimraf
 ```
 
+## Related projects
+
+- [eleventastic](https://github.com/maxboeck/eleventastic)
+
 ## License
 
 This project and its contents are open source under the [MIT license](LICENSE).

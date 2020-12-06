@@ -9,7 +9,8 @@
   "dependencies": {
     "@darekkay/logger": "1.0.2",
     "dayjs": "1.9.5",
-    "nanoid": "3.1.18"
+    "nanoid": "3.1.18",
+    "html-minifier": "4.0.0"
   },
   "devDependencies": {
     "@darekkay/eslint-config": "2.1.2",

@@ -12,6 +12,20 @@ My shared eleventy configuration.
 yarn add -D @11ty/eleventy @darekkay/11ty @darekkay/styles highlight.js markdown-it markdown-it-anchor markdown-it-link-attributes markdown-it-replace-link rimraf
 ```
 
+## 11ty Snippets
+
+### Permalinks
+
+- Note: this will cause issues with relative image assets.
+
+```
+module.exports = {
+  eleventyComputed: {
+    permalink: (data) => `/blog/${data.page.fileSlug}/index.html`,
+  },
+};
+```
+
 ## Related projects
 
 - [eleventastic](https://github.com/maxboeck/eleventastic)

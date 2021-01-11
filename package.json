@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "0.11.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "3.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "3.0.6",
     "@darekkay/logger": "1.0.2",
     "dayjs": "1.9.5",
     "highlight.js": "10.2.0",

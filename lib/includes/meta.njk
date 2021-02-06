@@ -4,4 +4,19 @@
   <link rel="shortcut icon" href="{{ favicon }}">
 {% endif %}
 
-{# TODO: https://github.com/maxboeck/eleventastic/blob/master/src/includes/meta.njk #}
+{# Open Graph #}
+
+<meta property="og:site_name" content="{{ title or metadata.title }}">
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:description" content="{{ description or metadata.subtitle }}">
+<meta property="og:locale" content="{{ metadata.lang or "en" }}">
+<meta property="og:type" content="website">
+{% if absoluteCoverUrl %}
+  <meta property="og:image" content="{{ absoluteCoverUrl }}">
+{% endif %}
+
+{# Twitter Card #}
+
+<meta name="twitter:site" content="@darek_kay">
+<meta name="twitter:card" content="{% if absoluteCoverUrl %}summary_large_image{% else %}summary{% endif %}">

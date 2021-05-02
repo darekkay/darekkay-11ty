@@ -1,7 +1,7 @@
 {
   "name": "@darekkay/11ty",
   "description": "My shared eleventy configuration",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
   "bugs": {
     "url": "https://github.com/darekkay/darekkay-11ty/issues"

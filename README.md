@@ -9,7 +9,7 @@ My shared eleventy configuration.
 ## Installation
 
 ```bash
-yarn add -D @11ty/eleventy @darekkay/11ty @darekkay/styles highlight.js markdown-it markdown-it-anchor markdown-it-link-attributes markdown-it-replace-link rimraf
+yarn add -D @darekkay/11ty
 ```
 
 ## 11ty Snippets

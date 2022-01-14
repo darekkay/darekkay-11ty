@@ -7,25 +7,24 @@
     "url": "https://github.com/darekkay/darekkay-11ty/issues"
   },
   "dependencies": {
-    "@11ty/eleventy": "1.0.0-beta.8",
+    "@11ty/eleventy": "1.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "3.1.3",
     "@darekkay/logger": "1.2.0",
     "dayjs": "1.10.7",
-    "highlight.js": "11.3.1",
+    "highlight.js": "11.4.0",
     "html-minifier": "4.0.0",
-    "markdown-it": "12.3.0",
-    "markdown-it-link-attributes": "3.0.0",
+    "markdown-it": "12.3.2",
     "markdown-it-replace-link": "1.1.0",
     "markdown-it-toc-done-right": "4.2.0",
-    "nanoid": "3.1.30",
+    "nanoid": "3.1.32",
     "posthtml": "0.16.5",
     "posthtml-extend-attrs": "1.0.0",
     "posthtml-urls": "1.0.0",
-    "slugify": "1.6.4",
+    "slugify": "1.6.5",
     "word-counting": "1.1.3"
   },
   "devDependencies": {
-    "@darekkay/scripts": "1.5.2"
+    "@darekkay/scripts": "1.5.3"
   },
   "engines": {
     "node": ">=12.22.0"
@@ -40,6 +39,7 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/darekkay/darekkay-11ty.git"

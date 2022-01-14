@@ -18,7 +18,7 @@ yarn add -D @darekkay/11ty
 
 - Note: this will cause issues with relative image assets.
 
-```
+```js
 module.exports = {
   eleventyComputed: {
     permalink: (data) => `/blog/${data.page.fileSlug}/index.html`,

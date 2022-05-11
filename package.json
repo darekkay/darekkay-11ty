@@ -27,7 +27,7 @@
     "@darekkay/scripts": "2.0.2"
   },
   "engines": {
-    "node": ">=12.22.0"
+    "node": ">=14.0.0"
   },
   "files": [
     "lib"

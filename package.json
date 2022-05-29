@@ -30,7 +30,8 @@
     "node": ">=14.0.0"
   },
   "files": [
-    "lib"
+    "lib",
+    "types"
   ],
   "homepage": "https://github.com/darekkay/darekkay-11ty#readme",
   "keywords": [

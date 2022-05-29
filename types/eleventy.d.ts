@@ -1,5 +1,3 @@
-// TODO: Move to @darekkay/11ty
-
 /* Based on this great work: https://github.com/chriskrycho/v5.chriskrycho.com/blob/main/types/eleventy.d.ts */
 
 type ServeStaticOptions = import("serve-static").ServeStaticOptions;

@@ -1,3 +1,4 @@
 {
-  "extends": ["@darekkay/eslint-config/nodejs"]
+  "extends": ["@darekkay/eslint-config/nodejs"],
+  "ignorePatterns": ["types/eleventy.d.ts"]
 }

@@ -7,11 +7,11 @@
     "url": "https://github.com/darekkay/darekkay-11ty/issues"
   },
   "dependencies": {
-    "@11ty/eleventy": "1.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "4.0.0",
+    "@11ty/eleventy": "1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "4.1.0",
     "@darekkay/logger": "2.0.0",
-    "dayjs": "1.11.2",
-    "highlight.js": "11.5.1",
+    "dayjs": "1.11.5",
+    "highlight.js": "11.6.0",
     "html-minifier": "4.0.0",
     "markdown-it": "13.0.1",
     "markdown-it-replace-link": "1.1.0",
@@ -24,7 +24,7 @@
     "word-counting": "1.1.4"
   },
   "devDependencies": {
-    "@darekkay/scripts": "2.0.2"
+    "@darekkay/scripts": "2.4.0"
   },
   "engines": {
     "node": ">=14.0.0"

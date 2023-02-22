@@ -7,7 +7,7 @@
     "url": "https://github.com/darekkay/darekkay-11ty/issues"
   },
   "dependencies": {
-    "@11ty/eleventy": "1.0.2",
+    "@11ty/eleventy": "2.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "4.2.0",
     "@darekkay/logger": "2.0.1",
     "dayjs": "1.11.7",

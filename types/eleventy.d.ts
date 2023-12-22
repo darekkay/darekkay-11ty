@@ -233,15 +233,18 @@ export interface Config {
   addCollection(
     name: string,
     builder: (
-      collection: Collection
-    ) => Page[] | Record<string, unknown> | Promise<Record<string, unknown>>
+      collection: Collection,
+    ) => Page[] | Record<string, unknown> | Promise<Record<string, unknown>>,
   ): void;
 
   addFilter(name: string, filter: AnyFunction): string | void;
 
   addTransform(
     name: string,
-    transform: (content: string, outputPath: string) => string | Promise<string>
+    transform: (
+      content: string,
+      outputPath: string,
+    ) => string | Promise<string>,
   ): string;
 
   addLinter(
@@ -249,8 +252,8 @@ export interface Config {
     linter: (
       content: string,
       inputPath: string,
-      outputPath: string
-    ) => void | Promise<void>
+      outputPath: string,
+    ) => void | Promise<void>,
   ): void;
 
   addShortcode(name: string, shortcode: AnyFunction<string>): string;
@@ -260,14 +263,14 @@ export interface Config {
   addJavascriptShortcode(name: string, shortcode: AnyFunction<string>): void;
   addPairedShortcode(
     name: string,
-    shortcode: <A>(content: string, ...args: A[]) => string
+    shortcode: <A>(content: string, ...args: A[]) => string,
   ): void;
 
   addJavaScriptFunction(name: string, fn: AnyFunction<string>): void;
 
   addLiquidFilter(
     name: string,
-    filter: <A>(...args: A[]) => unknown
+    filter: <A>(...args: A[]) => unknown,
   ): Record<string, unknown>;
 
   addNunjucksFilter(name: string, filter: <A>(...args: A[]) => unknown): void;
@@ -276,16 +279,16 @@ export interface Config {
     name: string,
     filter: <T>(
       value: T,
-      callback: <E, R>(err: E | null, res: R) => unknown
-    ) => void
+      callback: <E, R>(err: E | null, res: R) => unknown,
+    ) => void,
   ): void;
   addNunjucksAsyncFilter(
     name: string,
     filter: <T, U>(
       value1: T,
       value2: U,
-      callback: <E, R>(err: E | null, res: R) => unknown
-    ) => void
+      callback: <E, R>(err: E | null, res: R) => unknown,
+    ) => void,
   ): void;
   addNunjucksAsyncFilter(
     name: string,
@@ -293,13 +296,13 @@ export interface Config {
       value1: T,
       value2: U,
       value3: V,
-      callback: <E, R>(err: E | null, res: R) => unknown
-    ) => void
+      callback: <E, R>(err: E | null, res: R) => unknown,
+    ) => void,
   ): void;
 
   addHandlebarsHelper(
     name: string,
-    helper: AnyFunction<string>
+    helper: AnyFunction<string>,
   ): Record<string, unknown>;
 
   /**

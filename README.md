@@ -9,7 +9,7 @@ My shared eleventy configuration.
 ## Installation
 
 ```bash
-yarn add -D @darekkay/11ty
+npm install --save-dev @darekkay/11ty
 ```
 
 ## 11ty Snippets

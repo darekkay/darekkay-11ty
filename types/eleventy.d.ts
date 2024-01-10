@@ -67,6 +67,47 @@ interface BrowserSyncConfig {
   /* eslint-enable @typescript-eslint/no-explicit-any */
 }
 
+/**
+ * Eleventy Dev Server
+ *
+ * https://www.11ty.dev/docs/dev-server/
+ */
+interface EleventyServerOptions {
+  /** Whether the live reload snippet is used */
+  liveReload?: boolean;
+
+  /** Whether DOM diffing updates are applied where possible instead of page reloads */
+  domDiff?: boolean;
+
+  /** The starting port number. Will increment up to (configurable) 10 times if a port is already in use. */
+  port?: number;
+
+  /**
+   * Additional files to watch that will trigger server updates.
+   * Accepts an Array of file paths or globs (passed to `chokidar.watch`).
+   * Works great with a separate bundler writing files to your output folder.
+   */
+  watch?: string[];
+
+  /** Show local network IP addresses for device testing */
+  showAllHosts?: boolean;
+
+  /** Use a local key/certificate to opt-in to local HTTP/2 with https */
+  https?: {
+    key: string;
+    cert: string;
+  };
+
+  /** Change the default file encoding for reading/serving files */
+  encoding?: string;
+
+  /** Show the dev server version number on the command line */
+  showVersion?: boolean;
+
+  /** Middleware */
+  middleware?: Function[];
+}
+
 type Empty = { isEmpty: true; empty: string } | { isEmpty: false };
 
 type GrayMatter = {
@@ -257,6 +298,7 @@ export interface Config {
   ): void;
 
   addShortcode(name: string, shortcode: AnyFunction<string>): string;
+  addAsyncShortcode(name: string, shortcode: AnyFunction<string>): string;
   addLiquidShortcode(name: string, shortcode: AnyFunction<string>): void;
   addNunjucksShortcode(name: string, shortcode: AnyFunction<string>): void;
   addHandlebarsShortcode(name: string, shortcode: AnyFunction<string>): void;
@@ -362,6 +404,18 @@ export interface Config {
     engines?: Dict<Engine>;
   }): void;
   setLibrary(to: EngineName, using: Renderer): void;
+  setServerOptions(options: EleventyServerOptions): void;
+
+  /** Eleventy events: https://www.11ty.dev/docs/events/ */
+  on(
+    event:
+      | "eleventy.before"
+      | "eleventy.beforeWatch"
+      | "eleventy.after"
+      | "eleventy.config"
+      | "eleventy.extensionmap",
+    callback: Function,
+  ): void;
 }
 
 type NonMethodNames<T> = {

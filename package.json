@@ -11,15 +11,16 @@
     "@11ty/eleventy-fetch": "4.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
     "@darekkay/logger": "4.0.0",
+    "@iarna/word-count": "1.1.2",
     "dayjs": "1.11.10",
     "html-minifier": "4.0.0",
+    "html-to-text": "9.0.5",
     "markdown-it": "14.0.0",
     "nanoid": "3.3.4",
     "posthtml": "0.16.6",
     "posthtml-extend-attrs": "1.0.0",
     "posthtml-urls": "1.0.0",
-    "slugify": "1.6.6",
-    "word-counting": "1.1.4"
+    "slugify": "1.6.6"
   },
   "devDependencies": {
     "@darekkay/scripts": "3.0.1"

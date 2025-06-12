@@ -7,7 +7,7 @@
     "url": "https://github.com/darekkay/darekkay-11ty/issues"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.1.1",
+    "@11ty/eleventy": "3.1.0",
     "@11ty/eleventy-fetch": "5.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "5.0.1",
     "@darekkay/logger": "4.1.0",
